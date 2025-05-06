@@ -137,10 +137,7 @@ dataflows:
     dataflowSets:
       - id: '1a9ed43b-c9b3-4924-8fde-b702c49b0065'
         name: 'Set1'
-        dataflowModelObjects:
-          - id: 'ca962c7f-de05-4942-b490-bd2e3921d8ae'
-            alias: 's1'
-            sourceModelObjectId: '81c2e786-a28c-4c53-856d-e5e64ecd576b'
+        dataflowModelObjects: []
         termMappings:
           - termId: '5289fd6c-2284-4d30-b44e-1b9fccfaa2c4'
           - termId: '41564dbc-98ab-4900-8b87-df7e908f0eb9'
@@ -148,13 +145,8 @@ dataflows:
           - termId: '78e2d43e-cd5a-4e85-89ac-00082489cf7f'
           - termId: 'eee2c5c3-7663-4290-92f0-b71366f0c940'
           - termId: '5b0bacb4-1799-4062-bd0d-342f3ad3434b'
-          - expression: 'ca962c7f-de05-4942-b490-bd2e3921d8ae.2f60fe35-3f13-4542-aadb-098f58456573'
-            termId: '6adb315a-722f-4488-8d93-4495063067ab'
-          - expression: 'ca962c7f-de05-4942-b490-bd2e3921d8ae.d34df03c-e305-4a35-90ee-7261b035475d'
-            termId: '158dc95f-0f18-4cb3-9739-8963e87065d1'
-          - expression: 'ca962c7f-de05-4942-b490-bd2e3921d8ae.e45b3c29-d99c-4db0-b496-a1fa1556ab8d'
-            termId: '515b4b37-1eed-43ba-ad90-5de3689a6790'
-          - expression: 'ca962c7f-de05-4942-b490-bd2e3921d8ae.582cbbf4-3b08-4ee4-95b4-6bea3de0cfe3'
-            termId: '0808b848-e10f-4f44-bc0f-b05872be4f75'
-          - expression: 'ca962c7f-de05-4942-b490-bd2e3921d8ae.f535c332-52a5-4a21-abbd-9c221a3b7c55'
-            termId: '184720a1-ceb0-4e07-bf62-7804388b0998'
+          - termId: '6adb315a-722f-4488-8d93-4495063067ab'
+          - termId: '158dc95f-0f18-4cb3-9739-8963e87065d1'
+          - termId: '515b4b37-1eed-43ba-ad90-5de3689a6790'
+          - termId: '0808b848-e10f-4f44-bc0f-b05872be4f75'
+          - termId: '184720a1-ceb0-4e07-bf62-7804388b0998'
