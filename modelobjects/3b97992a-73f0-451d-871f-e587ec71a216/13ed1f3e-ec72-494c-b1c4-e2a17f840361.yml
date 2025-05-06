@@ -92,16 +92,6 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
-  - id: 'b4134c47-8514-45bf-afc9-5db2d8f6feab'
-    name: 'customerid'
-    hiddenInSource: false
-    hiddenInTarget: false
-    isBusinessKey: false
-    isForeignKey: false
-    isIdentity: false
-    isNullable: true
-    dataType:
-      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
 dataflows:
   - id: 'e19a17a7-831e-46c9-9f00-373d2db93ea2'
     name: 'Dataflow1'
@@ -120,8 +110,6 @@ dataflows:
           - termId: '845275fe-8c8b-4a71-b7b9-28bc8a4a7639'
           - termId: '43030e86-f319-464b-a05a-dd772dd418fe'
           - termId: 'bc6b2b8f-f9a0-43a0-8d34-4d78a3da9664'
-          - expression: 'c1de59bc-373e-4643-b0b8-5f39d207d5f7.32f56cd6-9be0-489f-88e1-31208e2741c4'
-            termId: 'b4134c47-8514-45bf-afc9-5db2d8f6feab'
 relationships:
   - id: '5e4e7b2c-6fb1-4ef9-8579-52a4d3ca52f3'
     referencedModelObjectId: '22075a01-da90-4da1-a7db-a35e1949fc9f'
