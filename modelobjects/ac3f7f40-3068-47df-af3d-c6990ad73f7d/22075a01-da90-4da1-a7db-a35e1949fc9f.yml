@@ -42,6 +42,17 @@ terms:
     isNullable: true
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
+    name: 'accountnumber'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+    propertyValues: []
 dataflows:
   - id: '556adcee-5cac-435f-bde4-bd713ed2a166'
     name: 'Dataflow1'
@@ -56,3 +67,6 @@ dataflows:
           - termId: '364adf59-7c7b-4462-a516-8b6120015f29'
           - termId: '3b806a81-d948-415e-83ad-f5cc71aedc87'
           - termId: '2b651863-3d9b-437d-9251-67d0d1824238'
+          - expression: '63c21f3d-2ce0-485c-8e61-7db49c9ff2de.b8428be2-b595-4d2f-834d-a9543352197f'
+            termId: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
+            propertyValues: []
