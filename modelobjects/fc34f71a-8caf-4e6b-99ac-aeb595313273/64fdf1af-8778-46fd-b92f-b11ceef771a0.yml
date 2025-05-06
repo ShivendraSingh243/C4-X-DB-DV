@@ -42,6 +42,56 @@ terms:
     isNullable: true
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '6bc23db7-357b-4484-a1fa-fda395482f92'
+    name: 'FK_CUSTOMER_accountnumber'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '9f278fc4-6dc0-4ec9-825d-1d4cd27db19c'
+    name: 'CUSTOMER_CUSTOMER_HK'
+    description: 'Identifier of the referenced Hub record'
+    defaultTermId: '3e06f270-8fdf-4e8e-80f6-3583cf8bf51c'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: true
+    isIdentity: false
+    isIdentityForeignKey: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '9e709d1c-0b3c-471a-a9e2-10bafd566532'
+    name: 'FK_ORDER_salesorderid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'cc692234-1dc5-4efc-a667-055e983aef02'
+    name: 'ORDER_ORDER_HK'
+    description: 'Identifier of the referenced Hub record'
+    defaultTermId: '3e06f270-8fdf-4e8e-80f6-3583cf8bf51c'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: true
+    isIdentity: false
+    isIdentityForeignKey: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
 dataflows:
   - id: '68040fe0-cf7e-482b-bae6-75d1a33692bd'
     name: 'Dataflow1'
@@ -60,4 +110,27 @@ dataflows:
           - termId: '5024dffb-2dd3-4865-9141-afbb80950769'
           - termId: 'a8070d86-e203-4ef6-ad61-6701dfded845'
           - termId: '6f6fd45b-c779-4fca-b3f7-5e891243f49a'
+          - termId: '6bc23db7-357b-4484-a1fa-fda395482f92'
+          - termId: '9f278fc4-6dc0-4ec9-825d-1d4cd27db19c'
+          - termId: '9e709d1c-0b3c-471a-a9e2-10bafd566532'
+          - termId: 'cc692234-1dc5-4efc-a667-055e983aef02'
+relationships:
+  - id: '07414d50-8b99-403a-a9c9-5dac0bd212d5'
+    referencedModelObjectId: '22075a01-da90-4da1-a7db-a35e1949fc9f'
+    role: 'CUSTOMER'
+    additionalTermIds:
+      - '9f278fc4-6dc0-4ec9-825d-1d4cd27db19c'
+    relationshipTerms:
+      - referenceTermId: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
+        termId: '6bc23db7-357b-4484-a1fa-fda395482f92'
+    propertyValues: []
+  - id: '659e6f43-db8e-4239-a781-c6ec78a19e39'
+    referencedModelObjectId: 'df951579-d040-462a-ba5e-2e5592860a7b'
+    role: 'ORDER'
+    additionalTermIds:
+      - 'cc692234-1dc5-4efc-a667-055e983aef02'
+    relationshipTerms:
+      - referenceTermId: 'd4c28799-49bd-404a-98d8-f30aedd2a829'
+        termId: '9e709d1c-0b3c-471a-a9e2-10bafd566532'
+    propertyValues: []
 tags: []
