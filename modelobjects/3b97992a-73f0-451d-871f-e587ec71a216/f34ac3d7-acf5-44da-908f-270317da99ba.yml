@@ -102,16 +102,6 @@ terms:
     isNullable: true
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
-  - id: '6467b568-26b5-4ef1-878b-b0695c3c01b0'
-    name: 'personid'
-    hiddenInSource: false
-    hiddenInTarget: false
-    isBusinessKey: false
-    isForeignKey: false
-    isIdentity: false
-    isNullable: true
-    dataType:
-      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
 dataflows:
   - id: 'b613eb6b-41d1-4bf5-beb1-81233d28f4af'
     name: 'Dataflow1'
@@ -132,8 +122,6 @@ dataflows:
           - termId: '20bd88b6-7d24-4fc8-994b-4957024fac8f'
           - expression: 'fc14bd46-7bfb-4b25-8253-7f5315c8e584.cede69f5-71b4-4e0c-979b-339173968e09'
             termId: 'a9099373-0529-468e-b6fa-1e5332a38430'
-          - expression: 'fc14bd46-7bfb-4b25-8253-7f5315c8e584.5a3be5be-256f-4e1c-a79a-534017e707f0'
-            termId: '6467b568-26b5-4ef1-878b-b0695c3c01b0'
 relationships:
   - id: 'd27c7e20-9b50-4ed3-9f4a-d20599d917b1'
     referencedModelObjectId: '22075a01-da90-4da1-a7db-a35e1949fc9f'
