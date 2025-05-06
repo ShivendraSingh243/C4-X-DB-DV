@@ -56,6 +56,8 @@ terms:
 dataflows:
   - id: '556adcee-5cac-435f-bde4-bd713ed2a166'
     name: 'Dataflow1'
+    description: ''
+    alias: ''
     dataflowSets:
       - id: 'ffb9e811-4f81-4f52-9399-34d5beaeb1a2'
         name: 'SetADW'
@@ -86,3 +88,8 @@ dataflows:
             termId: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
             propertyValues: []
         propertyValues: []
+    propertyValues:
+      - propertyId: '713ec758-07f0-4d05-8b91-5d3427261f76'
+        value: 'Partition'
+      - propertyId: 'a57fa4ce-3f1f-4542-85e0-27c0c5dc9b3f'
+        value: ''
