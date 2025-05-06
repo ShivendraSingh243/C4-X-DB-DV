@@ -15,6 +15,10 @@ sourceSystems:
     description: ''
     activeDiscovery: 'e2c5eaea-28ed-4f66-b073-546a4965d0e4'
     sourceSystemTypeId: '301305db-47c8-4d20-b2b2-5dbefbaf251d'
+  - id: '47f997f6-b7fa-4f3d-96e0-ba6790483fed'
+    name: 'stage_files_with_crm'
+    isLinkedProject: true
+    sourceSystemTypeId: '301305db-47c8-4d20-b2b2-5dbefbaf251d'
 propertyValues:
   - propertyId: '59eca19a-3bec-4169-85fd-41331f6fac3a'
     value: 'true'

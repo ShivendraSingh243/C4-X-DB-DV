@@ -346,7 +346,7 @@ terms:
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
 tags:
-  - '$discovery#id#db9e4ec7-7951-4807-85e0-0f8a8455719c'
+  - '$discovery#id#11da50c8-a846-44e0-84a9-a09ad0e81ae4'
   - '$linkedproject#id#74d3336e-f12a-49f6-737e-08dd7ccec69f'
   - '$linkedproject#targetname#STG_ST_SALESORDERHEADER_Result'
-  - '$sourcesystem#id#6c40c82f-b433-4b30-81bd-0fe662dcc9d2'
+  - '$sourcesystem#id#47f997f6-b7fa-4f3d-96e0-ba6790483fed'

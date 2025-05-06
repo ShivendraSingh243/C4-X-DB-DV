@@ -1,10 +1,10 @@
-id: 'cb7ed9ab-01e5-4953-914a-e0cb7d397c7d'
-name: 'CURRENCY'
-description: 'Generated Model Object from CURRENCY'
+id: 'c5a8a77a-8451-4eba-b7a5-e0ae81914440'
+name: 'CUSTOMERCRM'
+description: 'Generated Model Object from CUSTOMERCRM'
 isLinked: true
 modelObjectTypeId: '5a74b513-9166-4fd4-96c4-4062356fc4a4'
 terms:
-  - id: '1bcdf491-b460-4b4b-9aef-7db045caa712'
+  - id: '9a1b20d1-95c4-4b62-a65b-bf58ccf29534'
     name: 'BG_SourceFilePath'
     description: 'Default term, which stores the name of theinput file'
     hiddenInSource: false
@@ -16,7 +16,7 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
-  - id: 'e14fdf2b-9fba-4362-8f64-7594711588b6'
+  - id: 'fd6c227c-94f0-4fd4-97a2-d5d40823149b'
     name: 'BG_LoadTimestamp'
     description: 'Default term with the load timestamp'
     hiddenInSource: false
@@ -28,7 +28,7 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
-  - id: '94f844d6-19d0-4aac-a786-308bb1b9a6ee'
+  - id: 'a93d202f-5229-4843-8968-f5a65b95042d'
     name: 'BG_SourceSystem'
     description: 'Default term with an identifier of the source system'
     hiddenInSource: false
@@ -40,8 +40,8 @@ terms:
     isNullable: true
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
-  - id: 'e6128362-08b0-46ec-9ef6-94d535f0f5c1'
-    name: 'currencycode'
+  - id: '122c0b47-d2fe-4375-9389-29f22085d0dc'
+    name: 'AccountNumber'
     hiddenInSource: false
     hiddenInTarget: false
     isBusinessKey: true
@@ -51,8 +51,8 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
-  - id: '29a3c6b9-70ca-47e5-837b-d6739270156d'
-    name: 'name'
+  - id: '19e21f71-0d86-487b-bb58-c12cd7252424'
+    name: 'Marital_Status'
     hiddenInSource: false
     hiddenInTarget: false
     isBusinessKey: false
@@ -62,8 +62,8 @@ terms:
     isNullable: true
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
-  - id: '7ea46757-d4ef-474c-af2e-525210d659d8'
-    name: 'modifieddate'
+  - id: '91d79efe-4211-4e1a-ae4d-7d3e971d6ed8'
+    name: 'Gender'
     hiddenInSource: false
     hiddenInTarget: false
     isBusinessKey: false
@@ -72,8 +72,19 @@ terms:
     isIdentity: false
     isNullable: true
     dataType:
-      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
-  - id: '59715028-2367-4c71-9ff2-7687d75701dc'
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '1167a364-dbde-4a7e-851e-cef9c21a83e8'
+    name: 'Number_Of_Children'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'd0250d30-2f17-4bd8-b04f-2e4961a6727f'
     name: 'dt'
     hiddenInSource: false
     hiddenInTarget: false
@@ -87,5 +98,5 @@ terms:
 tags:
   - '$discovery#id#11da50c8-a846-44e0-84a9-a09ad0e81ae4'
   - '$linkedproject#id#74d3336e-f12a-49f6-737e-08dd7ccec69f'
-  - '$linkedproject#targetname#STG_ST_CURRENCY_Result'
+  - '$linkedproject#targetname#STG_ST_CUSTOMERCRM_Result'
   - '$sourcesystem#id#47f997f6-b7fa-4f3d-96e0-ba6790483fed'
