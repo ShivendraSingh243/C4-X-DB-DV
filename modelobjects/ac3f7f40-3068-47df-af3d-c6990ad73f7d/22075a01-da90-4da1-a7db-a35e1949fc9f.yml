@@ -82,5 +82,7 @@ dataflows:
           - termId: '364adf59-7c7b-4462-a516-8b6120015f29'
           - termId: '3b806a81-d948-415e-83ad-f5cc71aedc87'
           - termId: '2b651863-3d9b-437d-9251-67d0d1824238'
-          - termId: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
+          - expression: '7600a0f2-7a26-4a20-ba52-74ba5012a4a8.122c0b47-d2fe-4375-9389-29f22085d0dc'
+            termId: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
+            propertyValues: []
         propertyValues: []
