@@ -58,7 +58,7 @@ dataflows:
     name: 'Dataflow1'
     dataflowSets:
       - id: 'ffb9e811-4f81-4f52-9399-34d5beaeb1a2'
-        name: 'Set1'
+        name: 'SetADW'
         dataflowModelObjects:
           - id: '63c21f3d-2ce0-485c-8e61-7db49c9ff2de'
             alias: 's1'
@@ -70,3 +70,4 @@ dataflows:
           - expression: '63c21f3d-2ce0-485c-8e61-7db49c9ff2de.b8428be2-b595-4d2f-834d-a9543352197f'
             termId: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
             propertyValues: []
+        propertyValues: []
