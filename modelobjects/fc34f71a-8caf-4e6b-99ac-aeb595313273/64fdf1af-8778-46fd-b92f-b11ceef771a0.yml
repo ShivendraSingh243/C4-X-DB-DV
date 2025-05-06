@@ -104,8 +104,10 @@ dataflows:
             sourceModelObjectId: 'd6e8f123-e27c-402c-acc0-8ecdc54c361a'
           - id: '3ba58709-03c5-498d-8f73-9d2474da2427'
             alias: 's2'
+            joinExpression: 'd8ab9873-9cb7-43f4-bafc-e0c2f41d7cee.32f56cd6-9be0-489f-88e1-31208e2741c4 = 3ba58709-03c5-498d-8f73-9d2474da2427.8cbf0d85-6a4e-4b83-831a-3219d406472a'
             joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
             sourceModelObjectId: 'aba72bb2-8f9f-461c-903a-9133098cef8e'
+            propertyValues: []
         termMappings:
           - termId: '5024dffb-2dd3-4865-9141-afbb80950769'
           - termId: 'a8070d86-e203-4ef6-ad61-6701dfded845'
