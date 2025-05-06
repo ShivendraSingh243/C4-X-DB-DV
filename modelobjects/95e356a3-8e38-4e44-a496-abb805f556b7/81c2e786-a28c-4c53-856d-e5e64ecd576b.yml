@@ -1,0 +1,58 @@
+id: '81c2e786-a28c-4c53-856d-e5e64ecd576b'
+name: 'CUSTOMERCRM'
+modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
+terms:
+  - id: '2f60fe35-3f13-4542-aadb-098f58456573'
+    name: 'AccountNumber'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'd34df03c-e305-4a35-90ee-7261b035475d'
+    name: 'Marital_Status'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'e45b3c29-d99c-4db0-b496-a1fa1556ab8d'
+    name: 'Gender'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '582cbbf4-3b08-4ee4-95b4-6bea3de0cfe3'
+    name: 'Number_Of_Children'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'f535c332-52a5-4a21-abbd-9c221a3b7c55'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+tags:
+  - '$discovery#id#e2c5eaea-28ed-4f66-b073-546a4965d0e4'
+  - '$initial#name#customercrm'
+  - '$sourcesystem#id#51ea64da-e5f9-4f0d-8203-796ad28c899e'
