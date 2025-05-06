@@ -1,0 +1,55 @@
+id: 'd226fc29-dd1e-4388-a9a5-adad442b5e35'
+name: 'ORDER_CREDITCARD'
+isDeactivated: false
+modelObjectTypeId: 'fc34f71a-8caf-4e6b-99ac-aeb595313273'
+terms:
+  - id: '30351633-b8e4-44f1-82ad-6f36d2c19a5c'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: 'bd84cf67-040e-43ae-aa97-212a9b4849e7'
+    name: 'Link_HK'
+    description: 'Identifier of a record'
+    defaultTermId: '681eef24-7738-4e91-852b-8c53a3197e64'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '3ac355f5-f221-45bd-b078-2645c834acf0'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+dataflows:
+  - id: '50f21983-0311-4a64-a8bb-c7e9a3315d19'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '3b4f69b7-f423-493d-90d6-0e58564bfdec'
+        name: 'Set1'
+        termMappings:
+          - termId: '30351633-b8e4-44f1-82ad-6f36d2c19a5c'
+          - termId: 'bd84cf67-040e-43ae-aa97-212a9b4849e7'
+          - termId: '3ac355f5-f221-45bd-b078-2645c834acf0'
+tags: []
