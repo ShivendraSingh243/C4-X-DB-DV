@@ -95,6 +95,7 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+    propertyValues: []
   - id: 'cede69f5-71b4-4e0c-979b-339173968e09'
     name: 'rowguid'
     hiddenInSource: false
