@@ -10,6 +10,10 @@ sourceSystems:
     name: 'stage_file'
     isLinkedProject: true
     sourceSystemTypeId: '301305db-47c8-4d20-b2b2-5dbefbaf251d'
+  - id: '51ea64da-e5f9-4f0d-8203-796ad28c899e'
+    name: 'crm'
+    description: ''
+    sourceSystemTypeId: '301305db-47c8-4d20-b2b2-5dbefbaf251d'
 propertyValues:
   - propertyId: '59eca19a-3bec-4169-85fd-41331f6fac3a'
     value: 'true'
