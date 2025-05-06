@@ -92,16 +92,6 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
-  - id: '8117fcfa-2cb8-43c6-834e-8ef281226885'
-    name: 'storeid'
-    hiddenInSource: false
-    hiddenInTarget: false
-    isBusinessKey: false
-    isForeignKey: false
-    isIdentity: false
-    isNullable: true
-    dataType:
-      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
   - id: 'a9099373-0529-468e-b6fa-1e5332a38430'
     name: 'rowguid'
     hiddenInSource: false
@@ -150,8 +140,6 @@ dataflows:
           - termId: '7ec88f7c-a14a-4ff7-84b6-19aa7beb5dd4'
           - termId: 'b4e29012-1a18-4bd1-994c-30916dc48513'
           - termId: '20bd88b6-7d24-4fc8-994b-4957024fac8f'
-          - expression: 'fc14bd46-7bfb-4b25-8253-7f5315c8e584.f9b10b07-4dde-40d3-b931-d847f0d622df'
-            termId: '8117fcfa-2cb8-43c6-834e-8ef281226885'
           - expression: 'fc14bd46-7bfb-4b25-8253-7f5315c8e584.cede69f5-71b4-4e0c-979b-339173968e09'
             termId: 'a9099373-0529-468e-b6fa-1e5332a38430'
           - expression: 'fc14bd46-7bfb-4b25-8253-7f5315c8e584.285317a2-ea09-4d79-8f85-e255d694468c'
