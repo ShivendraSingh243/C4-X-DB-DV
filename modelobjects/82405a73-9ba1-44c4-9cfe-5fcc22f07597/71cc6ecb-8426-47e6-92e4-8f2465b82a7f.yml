@@ -52,17 +52,6 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
-  - id: '01fdd174-e8b9-441d-9c36-aecddf4d864c'
-    name: 'BG_SourceFilePath'
-    description: 'Default term, which stores the name of theinput file'
-    hiddenInSource: false
-    hiddenInTarget: false
-    isBusinessKey: false
-    isForeignKey: false
-    isIdentity: false
-    isNullable: false
-    dataType:
-      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
   - id: 'f7f83e8c-f2a1-45f7-8178-8e059d777c77'
     name: 'BG_LoadTimestamp1'
     description: 'Default term with the load timestamp'
@@ -131,8 +120,6 @@ dataflows:
           - termId: '7e80355f-2a0d-480a-8745-a1a541e561d8'
           - expression: '08c67087-1571-4517-beb4-0d9f88f86502.e6128362-08b0-46ec-9ef6-94d535f0f5c1'
             termId: '97b1ba7a-c206-4de6-be11-c5dded12927b'
-          - expression: '08c67087-1571-4517-beb4-0d9f88f86502.1bcdf491-b460-4b4b-9aef-7db045caa712'
-            termId: '01fdd174-e8b9-441d-9c36-aecddf4d864c'
           - expression: '08c67087-1571-4517-beb4-0d9f88f86502.e14fdf2b-9fba-4362-8f64-7594711588b6'
             termId: 'f7f83e8c-f2a1-45f7-8178-8e059d777c77'
           - expression: '08c67087-1571-4517-beb4-0d9f88f86502.94f844d6-19d0-4aac-a786-308bb1b9a6ee'
