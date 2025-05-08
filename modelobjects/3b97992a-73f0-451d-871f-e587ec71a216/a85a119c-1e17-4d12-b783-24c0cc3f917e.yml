@@ -81,6 +81,100 @@ terms:
     isNullable: true
     dataType:
       platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '92b0eeb6-e4cb-4e07-b693-b4a6238a9859'
+    name: 'salesorderid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '80ca35fe-3271-4fd1-ad21-5c3cc174d9cf'
+    name: 'currencyrateid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'fee7f86f-5e20-4888-b817-93165a0edf7e'
+    name: 'currencyratedate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: 'd8fdfecf-d472-4365-888c-d6ae708b970b'
+    name: 'fromcurrencycode'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'bac3cea1-0e3b-435e-9e63-985252a61b40'
+    name: 'tocurrencycode'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '31f32acc-6abd-4236-9fec-5ff9d3b43845'
+    name: 'averagerate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
+      precision: 19
+      scale: 4
+  - id: 'd279e1c3-0db0-4f86-9daf-9f972a521a13'
+    name: 'endofdayrate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
+      precision: 19
+      scale: 4
+  - id: 'b7d595ee-f33f-4cf1-8b8c-9882f5369a1b'
+    name: 'modifieddate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: 'fefe21f4-3646-4f4d-a1ad-6f2ea5087c80'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
 dataflows:
   - id: 'ca56033f-c6a3-4ba3-8fb1-cd9f73deaf47'
     name: 'Dataflow1'
@@ -98,4 +192,22 @@ dataflows:
           - termId: 'ce8fd4cb-d822-4995-9467-cc53fd90554d'
           - termId: 'f63606c2-7d35-4158-b6a0-7d74f253daa1'
           - termId: '9a8b3337-8c11-4130-b0c6-93fc2b247665'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.7cf61150-d33c-46fe-a4ea-ffcc6fd5b4b2'
+            termId: '92b0eeb6-e4cb-4e07-b693-b4a6238a9859'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.4f901b72-6601-4f7c-80b3-34572ee3ff81'
+            termId: '80ca35fe-3271-4fd1-ad21-5c3cc174d9cf'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.3beec3b2-a560-492c-9946-3d6775a4ed7c'
+            termId: 'fee7f86f-5e20-4888-b817-93165a0edf7e'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.c2c137f1-0e47-43b7-a51c-487a40070ee4'
+            termId: 'd8fdfecf-d472-4365-888c-d6ae708b970b'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.e1ce1d6d-2233-4ac9-940b-ef726afb43c1'
+            termId: 'bac3cea1-0e3b-435e-9e63-985252a61b40'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.7b99cf92-24f7-4edd-96e3-2e6df3c8817a'
+            termId: '31f32acc-6abd-4236-9fec-5ff9d3b43845'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.d19f69aa-9e30-45ef-846f-77c888d2771c'
+            termId: 'd279e1c3-0db0-4f86-9daf-9f972a521a13'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.ed3e8148-822d-4bf1-a320-ca1073302a3d'
+            termId: 'b7d595ee-f33f-4cf1-8b8c-9882f5369a1b'
+          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.17080eb3-4289-4242-8656-83c172450266'
+            termId: 'fefe21f4-3646-4f4d-a1ad-6f2ea5087c80'
 tags: []
