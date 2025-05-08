@@ -109,6 +109,26 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '63a26e5e-a11e-4c21-a013-c79002225597'
+    name: 'salesorderid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '26154022-854f-49f8-b85a-47ae8242869d'
+    name: 'salesorderdetailid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
 dataflows:
   - id: '3d4bf2e7-d393-48c0-8252-7c7c1aa8d6f3'
     name: 'Dataflow1'
@@ -148,4 +168,8 @@ dataflows:
             termId: '36854cd6-61cb-462f-b8d4-b7d96fb03aad'
           - expression: 'f7f925e1-16e3-4ad5-b229-c34b8701a171.307bb272-6bae-48b2-ba34-fc83fa814101'
             termId: '9d8d2e4c-e387-4de8-9d44-331a7f3a49c7'
+          - expression: 'e9b00496-cc6c-42ed-bfe1-fc34fad65c8d.c242797f-8f55-4d62-ba3e-6d3b1be484f6'
+            termId: '63a26e5e-a11e-4c21-a013-c79002225597'
+          - expression: 'e9b00496-cc6c-42ed-bfe1-fc34fad65c8d.21b14c6d-c86b-47dc-948b-e8e521d25c78'
+            termId: '26154022-854f-49f8-b85a-47ae8242869d'
 tags: []
