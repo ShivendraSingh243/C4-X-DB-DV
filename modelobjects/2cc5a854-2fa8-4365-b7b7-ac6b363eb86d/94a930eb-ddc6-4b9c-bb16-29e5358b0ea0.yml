@@ -1,6 +1,7 @@
 id: '94a930eb-ddc6-4b9c-bb16-29e5358b0ea0'
-name: 'SALESORDERHEADER'
+name: 'RVC1_SALESORDERHEADER'
 description: 'Generated Model Object from SALESORDERHEADER'
+isDeactivated: false
 modelObjectTypeId: '2cc5a854-2fa8-4365-b7b7-ac6b363eb86d'
 terms:
   - id: 'd576f06b-2e87-44cf-93c4-6446b065b057'
