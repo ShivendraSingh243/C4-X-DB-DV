@@ -17,4 +17,12 @@ dataflows:
             alias: 's2'
             joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
             sourceModelObjectId: '3e6ec74a-7961-4ff4-8493-0860b337674a'
+          - id: '3de07aa0-47f2-4286-a498-b46b818bc9a6'
+            alias: 's3'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: 'a3dc3df7-e3c4-4b44-92e8-c070db1ebd2c'
+          - id: '66d31dfb-f980-44b1-b684-232a16a45913'
+            alias: 's4'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: '22075a01-da90-4da1-a7db-a35e1949fc9f'
 tags: []
