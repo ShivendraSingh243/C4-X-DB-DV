@@ -81,16 +81,6 @@ terms:
     isNullable: true
     dataType:
       platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
-  - id: '80ca35fe-3271-4fd1-ad21-5c3cc174d9cf'
-    name: 'currencyrateid'
-    hiddenInSource: false
-    hiddenInTarget: false
-    isBusinessKey: true
-    isForeignKey: false
-    isIdentity: false
-    isNullable: false
-    dataType:
-      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
   - id: 'fee7f86f-5e20-4888-b817-93165a0edf7e'
     name: 'currencyratedate'
     hiddenInSource: false
@@ -196,8 +186,6 @@ dataflows:
           - termId: 'ce8fd4cb-d822-4995-9467-cc53fd90554d'
           - termId: 'f63606c2-7d35-4158-b6a0-7d74f253daa1'
           - termId: '9a8b3337-8c11-4130-b0c6-93fc2b247665'
-          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.4f901b72-6601-4f7c-80b3-34572ee3ff81'
-            termId: '80ca35fe-3271-4fd1-ad21-5c3cc174d9cf'
           - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.3beec3b2-a560-492c-9946-3d6775a4ed7c'
             termId: 'fee7f86f-5e20-4888-b817-93165a0edf7e'
           - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.c2c137f1-0e47-43b7-a51c-487a40070ee4'
