@@ -125,19 +125,6 @@ terms:
       platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
       precision: 19
       scale: 4
-  - id: 'd279e1c3-0db0-4f86-9daf-9f972a521a13'
-    name: 'endofdayrate'
-    hiddenInSource: false
-    hiddenInTarget: false
-    isBusinessKey: false
-    isForeignKey: false
-    isIdentity: false
-    isNullable: false
-    dataType:
-      platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
-      precision: 19
-      scale: 4
-    propertyValues: []
   - id: 'f134f9ea-d988-41bb-b1c4-8cd730a599eb'
     name: 'FK_ORDER_salesorderid'
     hiddenInSource: true
@@ -174,8 +161,6 @@ dataflows:
             termId: 'bac3cea1-0e3b-435e-9e63-985252a61b40'
           - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.7b99cf92-24f7-4edd-96e3-2e6df3c8817a'
             termId: '31f32acc-6abd-4236-9fec-5ff9d3b43845'
-          - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.d19f69aa-9e30-45ef-846f-77c888d2771c'
-            termId: 'd279e1c3-0db0-4f86-9daf-9f972a521a13'
           - expression: '4eef81ae-6ffc-47aa-a5be-1b92b16300b9.7cf61150-d33c-46fe-a4ea-ffcc6fd5b4b2'
             termId: 'f134f9ea-d988-41bb-b1c4-8cd730a599eb'
             propertyValues: []
