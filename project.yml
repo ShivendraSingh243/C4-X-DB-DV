@@ -4,7 +4,7 @@ description: 'this is my eLearning Project with the Databricks DataVault and Mar
 version: 'v1.5'
 configuration:
   id: 'biGENIUS.Implementation.Generator.VaultAndMart.Spark.Databricks'
-  version: '1.8.0'
+  version: '1.9.0'
 sourceSystems:
   - id: '6c40c82f-b433-4b30-81bd-0fe662dcc9d2'
     name: 'stage_file'
@@ -22,5 +22,3 @@ sourceSystems:
 propertyValues:
   - propertyId: '59eca19a-3bec-4169-85fd-41331f6fac3a'
     value: 'true'
-  - propertyId: 'a9de64e6-8417-4f17-b491-4f105ed891a9'
-    value: 'Sequential Notebook'
