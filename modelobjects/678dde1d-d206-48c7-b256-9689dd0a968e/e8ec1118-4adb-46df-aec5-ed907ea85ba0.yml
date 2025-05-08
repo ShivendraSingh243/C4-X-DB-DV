@@ -1,0 +1,12 @@
+id: 'e8ec1118-4adb-46df-aec5-ed907ea85ba0'
+name: 'ORDERDETAIL'
+isDeactivated: false
+modelObjectTypeId: '678dde1d-d206-48c7-b256-9689dd0a968e'
+terms: []
+dataflows:
+  - id: '3d4bf2e7-d393-48c0-8252-7c7c1aa8d6f3'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: 'c839f0b8-759a-42ba-9b12-d5309d275f22'
+        name: 'Set1'
+tags: []
