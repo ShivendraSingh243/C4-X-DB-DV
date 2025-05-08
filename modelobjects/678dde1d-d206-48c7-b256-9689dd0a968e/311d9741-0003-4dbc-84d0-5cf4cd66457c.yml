@@ -43,6 +43,66 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'b7951478-32a8-4951-8afd-c5b5fce76f60'
+    name: 'customerid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'b846fc3a-007b-4f00-9e4f-c5a05ccf0f6c'
+    name: 'personid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '9fbdeb61-272d-4383-9d12-b2131a0fe890'
+    name: 'storeid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '82c3c96e-c18c-4e2f-9189-5298419afef9'
+    name: 'territoryid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '6efc88d0-c203-4325-be9f-ba044e8f0aa9'
+    name: 'rowguid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'b4f5e443-b013-441f-afd7-99c2fdee1dc8'
+    name: 'modifieddate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
 dataflows:
   - id: '9db62d9c-ade8-4caf-af2b-1f7767b8f367'
     name: 'Dataflow1'
@@ -74,4 +134,16 @@ dataflows:
             termId: 'ae46dd01-8c52-4888-a428-94cd52d4bdd2'
           - expression: '3176ddc1-65bf-43c9-a251-d3a39d19f1c8.b116781f-1080-41cc-80b9-135a34ab81fe'
             termId: '34f13ca1-de0a-4052-a88b-29b6fee6651f'
+          - expression: '6bfa7057-a5e6-4ca0-be44-6fd91a5da8e6.fc28affd-68ff-41fe-aa71-01ea91793eb1'
+            termId: 'b7951478-32a8-4951-8afd-c5b5fce76f60'
+          - expression: '6bfa7057-a5e6-4ca0-be44-6fd91a5da8e6.30e664c3-a699-4339-8ea2-ed23c5f73313'
+            termId: 'b846fc3a-007b-4f00-9e4f-c5a05ccf0f6c'
+          - expression: '6bfa7057-a5e6-4ca0-be44-6fd91a5da8e6.4d86380b-a6aa-459b-9daf-fb355244da16'
+            termId: '9fbdeb61-272d-4383-9d12-b2131a0fe890'
+          - expression: '6bfa7057-a5e6-4ca0-be44-6fd91a5da8e6.0c78d709-0838-4e8b-bf1c-2237d698f4d7'
+            termId: '82c3c96e-c18c-4e2f-9189-5298419afef9'
+          - expression: '6bfa7057-a5e6-4ca0-be44-6fd91a5da8e6.0e270aa7-9f44-47a5-9349-191ea0928b94'
+            termId: '6efc88d0-c203-4325-be9f-ba044e8f0aa9'
+          - expression: '6bfa7057-a5e6-4ca0-be44-6fd91a5da8e6.5552255e-0500-4a45-8bc8-209648d5a534'
+            termId: 'b4f5e443-b013-441f-afd7-99c2fdee1dc8'
 tags: []
