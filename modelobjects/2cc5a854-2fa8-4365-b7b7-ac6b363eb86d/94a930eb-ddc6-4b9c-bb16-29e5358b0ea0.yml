@@ -40,6 +40,90 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '4f901b72-6601-4f7c-80b3-34572ee3ff81'
+    name: 'currencyrateid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '3beec3b2-a560-492c-9946-3d6775a4ed7c'
+    name: 'currencyratedate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: 'c2c137f1-0e47-43b7-a51c-487a40070ee4'
+    name: 'fromcurrencycode'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'e1ce1d6d-2233-4ac9-940b-ef726afb43c1'
+    name: 'tocurrencycode'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '7b99cf92-24f7-4edd-96e3-2e6df3c8817a'
+    name: 'averagerate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
+      precision: 19
+      scale: 4
+  - id: 'd19f69aa-9e30-45ef-846f-77c888d2771c'
+    name: 'endofdayrate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
+      precision: 19
+      scale: 4
+  - id: 'ed3e8148-822d-4bf1-a320-ca1073302a3d'
+    name: 'modifieddate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '17080eb3-4289-4242-8656-83c172450266'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
 dataflows:
   - id: '4432b987-e913-4072-a3f6-2c510374cd4f'
     name: 'Dataflow1'
@@ -61,3 +145,19 @@ dataflows:
           - termId: 'ea44808b-196b-45ae-88d6-4991c0852cf4'
           - expression: '8568f619-b136-4ff9-8b4f-0a212d3c0e11.b44d042d-a01d-4894-af91-edea11ee4e8c'
             termId: '7cf61150-d33c-46fe-a4ea-ffcc6fd5b4b2'
+          - expression: 'a7c2769d-9fb5-4406-8529-e2c28310f29d.b3e9346d-43fa-4336-9939-c7985507acb0'
+            termId: '4f901b72-6601-4f7c-80b3-34572ee3ff81'
+          - expression: 'a7c2769d-9fb5-4406-8529-e2c28310f29d.e7bb9a59-1247-4614-ba77-7eaee9464ce2'
+            termId: '3beec3b2-a560-492c-9946-3d6775a4ed7c'
+          - expression: 'a7c2769d-9fb5-4406-8529-e2c28310f29d.0617aa6c-430d-499a-a66e-8e7d0f32c76f'
+            termId: 'c2c137f1-0e47-43b7-a51c-487a40070ee4'
+          - expression: 'a7c2769d-9fb5-4406-8529-e2c28310f29d.6409308d-6c69-46a5-9c07-a3ac14f4f24b'
+            termId: 'e1ce1d6d-2233-4ac9-940b-ef726afb43c1'
+          - expression: 'a7c2769d-9fb5-4406-8529-e2c28310f29d.56d10974-3de6-4764-8c35-85d9ea602e72'
+            termId: '7b99cf92-24f7-4edd-96e3-2e6df3c8817a'
+          - expression: 'a7c2769d-9fb5-4406-8529-e2c28310f29d.2d3198a6-b83a-433b-b751-603b8ae67304'
+            termId: 'd19f69aa-9e30-45ef-846f-77c888d2771c'
+          - expression: 'a7c2769d-9fb5-4406-8529-e2c28310f29d.47035e05-b401-4e6c-9237-1a82141af130'
+            termId: 'ed3e8148-822d-4bf1-a320-ca1073302a3d'
+          - expression: 'a7c2769d-9fb5-4406-8529-e2c28310f29d.caa0822c-018e-4bcd-919f-4aababd60939'
+            termId: '17080eb3-4289-4242-8656-83c172450266'
