@@ -118,9 +118,10 @@ terms:
     isBusinessKey: false
     isForeignKey: false
     isIdentity: false
-    isNullable: true
+    isNullable: false
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+    propertyValues: []
   - id: 'bac3cea1-0e3b-435e-9e63-985252a61b40'
     name: 'tocurrencycode'
     hiddenInSource: false
