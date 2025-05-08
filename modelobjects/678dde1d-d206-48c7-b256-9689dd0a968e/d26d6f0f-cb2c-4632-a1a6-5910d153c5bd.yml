@@ -9,4 +9,16 @@ dataflows:
     dataflowSets:
       - id: '1cf28a6f-b55a-441f-9777-b230f081c7cd'
         name: 'Set1'
+        dataflowModelObjects:
+          - id: 'fac2017b-a2fe-44e0-8051-dcf88bad9051'
+            alias: 's1'
+            sourceModelObjectId: '42c93063-9617-4a5c-9af5-25f47fff0a22'
+          - id: 'c83a966a-3f9e-4f18-b24e-1fe490a91c51'
+            alias: 's2'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: 'df951579-d040-462a-ba5e-2e5592860a7b'
+          - id: '544e9afd-c78c-45fd-b2cf-03d7f51cb0d0'
+            alias: 's3'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: '2eeda33a-faa1-499c-ab34-dcf61432e6c2'
 tags: []
