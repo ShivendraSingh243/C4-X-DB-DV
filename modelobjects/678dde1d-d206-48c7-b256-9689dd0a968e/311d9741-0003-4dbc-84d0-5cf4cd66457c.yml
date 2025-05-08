@@ -2,7 +2,47 @@ id: '311d9741-0003-4dbc-84d0-5cf4cd66457c'
 name: 'CUSTOMER'
 isDeactivated: false
 modelObjectTypeId: '678dde1d-d206-48c7-b256-9689dd0a968e'
-terms: []
+terms:
+  - id: '05a3357a-5b79-4da1-8527-47a79a40143e'
+    name: 'Marital_Status'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '80338dec-429a-4fe9-9f52-80b2d010c9a8'
+    name: 'Gender'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'ae46dd01-8c52-4888-a428-94cd52d4bdd2'
+    name: 'Number_Of_Children'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '34f13ca1-de0a-4052-a88b-29b6fee6651f'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
 dataflows:
   - id: '9db62d9c-ade8-4caf-af2b-1f7767b8f367'
     name: 'Dataflow1'
@@ -25,4 +65,13 @@ dataflows:
             alias: 's4'
             joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
             sourceModelObjectId: '22075a01-da90-4da1-a7db-a35e1949fc9f'
+        termMappings:
+          - expression: '3176ddc1-65bf-43c9-a251-d3a39d19f1c8.d59ad0fe-bed1-4307-af68-4e4f37bacc4f'
+            termId: '05a3357a-5b79-4da1-8527-47a79a40143e'
+          - expression: '3176ddc1-65bf-43c9-a251-d3a39d19f1c8.79f295bc-de20-4fb7-98db-0319c71eefc8'
+            termId: '80338dec-429a-4fe9-9f52-80b2d010c9a8'
+          - expression: '3176ddc1-65bf-43c9-a251-d3a39d19f1c8.4769d29a-9e9c-470f-9b75-3260e41cad16'
+            termId: 'ae46dd01-8c52-4888-a428-94cd52d4bdd2'
+          - expression: '3176ddc1-65bf-43c9-a251-d3a39d19f1c8.b116781f-1080-41cc-80b9-135a34ab81fe'
+            termId: '34f13ca1-de0a-4052-a88b-29b6fee6651f'
 tags: []
