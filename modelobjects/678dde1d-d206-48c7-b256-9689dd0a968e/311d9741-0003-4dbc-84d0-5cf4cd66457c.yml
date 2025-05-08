@@ -114,6 +114,17 @@ terms:
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
     propertyValues: []
+  - id: '118dabf0-36df-4369-83e0-5c2c758c26eb'
+    name: 'Hub_HK'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+    propertyValues: []
 dataflows:
   - id: '9db62d9c-ade8-4caf-af2b-1f7767b8f367'
     name: 'Dataflow1'
@@ -159,4 +170,7 @@ dataflows:
             termId: 'b4f5e443-b013-441f-afd7-99c2fdee1dc8'
           - expression: '66d31dfb-f980-44b1-b684-232a16a45913.9169dbfb-9a71-43f0-8c75-59d830a59a8d'
             termId: 'e9ee13f4-217f-4686-9b0d-78a80fe006fb'
+          - expression: '6bfa7057-a5e6-4ca0-be44-6fd91a5da8e6.b2d785a5-5ebf-45bc-ae93-2eef8e74a37c'
+            termId: '118dabf0-36df-4369-83e0-5c2c758c26eb'
+            propertyValues: []
 tags: []
