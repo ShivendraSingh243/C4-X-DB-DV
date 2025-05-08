@@ -152,11 +152,12 @@ terms:
     isBusinessKey: false
     isForeignKey: false
     isIdentity: false
-    isNullable: true
+    isNullable: false
     dataType:
       platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
       precision: 19
       scale: 4
+    propertyValues: []
   - id: 'b7d595ee-f33f-4cf1-8b8c-9882f5369a1b'
     name: 'modifieddate'
     hiddenInSource: false
