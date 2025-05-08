@@ -1,0 +1,56 @@
+id: '94a930eb-ddc6-4b9c-bb16-29e5358b0ea0'
+name: 'SALESORDERHEADER'
+description: 'Generated Model Object from SALESORDERHEADER'
+modelObjectTypeId: '2cc5a854-2fa8-4365-b7b7-ac6b363eb86d'
+terms:
+  - id: 'd576f06b-2e87-44cf-93c4-6446b065b057'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'ea44808b-196b-45ae-88d6-4991c0852cf4'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '7cf61150-d33c-46fe-a4ea-ffcc6fd5b4b2'
+    name: 'salesorderid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+dataflows:
+  - id: '4432b987-e913-4072-a3f6-2c510374cd4f'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '6d440507-afa2-440b-b082-48549dacd257'
+        name: 'Set1'
+        dataflowModelObjects:
+          - id: '8568f619-b136-4ff9-8b4f-0a212d3c0e11'
+            alias: 's1'
+            sourceModelObjectId: 'aba72bb2-8f9f-461c-903a-9133098cef8e'
+        termMappings:
+          - termId: 'd576f06b-2e87-44cf-93c4-6446b065b057'
+          - termId: 'ea44808b-196b-45ae-88d6-4991c0852cf4'
+          - expression: '8568f619-b136-4ff9-8b4f-0a212d3c0e11.b44d042d-a01d-4894-af91-edea11ee4e8c'
+            termId: '7cf61150-d33c-46fe-a4ea-ffcc6fd5b4b2'
