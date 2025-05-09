@@ -125,7 +125,7 @@ dataflows:
           - id: 'eb09b0df-6cbb-4c34-b9e9-e60b3f8a519d'
             alias: 's5'
             joinExpression: 'eb09b0df-6cbb-4c34-b9e9-e60b3f8a519d.7d59e4d9-c04d-42aa-a548-5a413570369c = 3cf49af2-e546-481d-ab81-815a78492473.a889a5b9-3775-45ba-b851-9c296af7fd54'
-            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            joinOperatorId: 'ccd0c803-6c68-405c-9ede-c8ca4883f3ba'
             sourceModelObjectId: 'edfc8750-0eff-4303-9189-005ae9f81ae9'
             propertyValues: []
           - id: '54aea165-260f-4859-8cd0-7726004716b5'
