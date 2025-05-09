@@ -172,6 +172,100 @@ terms:
     isNullable: true
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '3d42bcac-164c-4846-894d-cfdcad00e7d0'
+    name: 'FK_CREDITCARD_SUPERIORCARD_cardtype'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'ab0d2438-6a09-453c-afa8-e441edeaf45f'
+    name: 'FK_CREDITCARD_SUPERIORCARD_cardnumber'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '0c6f2a26-1435-47e5-9e38-247cb136b2f2'
+    name: 'FK_CREDITCARD_SUPERIORCARD_expmonth'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'a16687ea-ada8-4329-9832-abd622b5ca5f'
+    name: 'FK_CREDITCARD_SUPERIORCARD_expyear'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '33b1a7d2-ded5-4603-b09b-9b2c1e3ac62f'
+    name: 'FK_CREDITCARD_SUPERIORCARD_creditcardid'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '472e3dca-830b-4ddc-95e0-c09477d324ac'
+    name: 'CREDITCARD_SUPERIORCARD_CREDITCARD_SUPERIORCARD_ID'
+    description: 'Default term with the identity of the referenced mart dimension'
+    defaultTermId: '618f7171-3c96-4093-9f01-05b68d3ee3f1'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: true
+    isIdentity: false
+    isIdentityForeignKey: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '3ea7a252-6878-4db5-9994-72fd3dae2075'
+  - id: '730a096e-bd01-4e96-a355-bc50011e7d49'
+    name: 'FK_D_CURRENCY_currencycode'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '730e7731-9b7e-4a37-a3af-e6ab29670fe0'
+    name: 'D_CURRENCY_D_CURRENCY_ID'
+    description: 'Default term with the identity of the referenced mart dimension'
+    defaultTermId: '618f7171-3c96-4093-9f01-05b68d3ee3f1'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: true
+    isIdentity: false
+    isIdentityForeignKey: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '3ea7a252-6878-4db5-9994-72fd3dae2075'
 dataflows:
   - id: 'c82e73ad-1baa-41b5-bf8c-d7dd06a0b171'
     name: 'Dataflow1'
@@ -246,4 +340,39 @@ dataflows:
             termId: '253410ae-f9ec-46fb-b772-c752732ee066'
           - expression: '15430198-1a1a-4b3c-a392-343a9ffa597d.3bc5c872-3fe2-4a4b-a2a0-d9fec5eef26d'
             termId: '197c5a61-3b7c-4819-9b69-8b46f675b77a'
+          - termId: '3d42bcac-164c-4846-894d-cfdcad00e7d0'
+          - termId: 'ab0d2438-6a09-453c-afa8-e441edeaf45f'
+          - termId: '0c6f2a26-1435-47e5-9e38-247cb136b2f2'
+          - termId: 'a16687ea-ada8-4329-9832-abd622b5ca5f'
+          - termId: '33b1a7d2-ded5-4603-b09b-9b2c1e3ac62f'
+          - termId: '472e3dca-830b-4ddc-95e0-c09477d324ac'
+          - termId: '730a096e-bd01-4e96-a355-bc50011e7d49'
+          - termId: '730e7731-9b7e-4a37-a3af-e6ab29670fe0'
+relationships:
+  - id: '19cc3c79-d82d-419e-8ae0-e8980ecbfa4d'
+    referencedModelObjectId: 'b5f7748c-5395-4c13-9c37-002e32e51cfd'
+    role: 'CREDITCARD_SUPERIORCARD'
+    additionalTermIds:
+      - '472e3dca-830b-4ddc-95e0-c09477d324ac'
+    relationshipTerms:
+      - referenceTermId: '10cbe4f8-eadb-42f0-9824-2ee3e91dd231'
+        termId: '3d42bcac-164c-4846-894d-cfdcad00e7d0'
+      - referenceTermId: '934a3087-fcbc-4e88-8654-72731472ab40'
+        termId: 'ab0d2438-6a09-453c-afa8-e441edeaf45f'
+      - referenceTermId: 'b4b49a68-773b-4c42-b36c-6650f143cd76'
+        termId: '0c6f2a26-1435-47e5-9e38-247cb136b2f2'
+      - referenceTermId: 'b59532fc-6807-4ebe-81c6-694e4d4c2d62'
+        termId: 'a16687ea-ada8-4329-9832-abd622b5ca5f'
+      - referenceTermId: 'd9b24dc2-0c44-421a-b2f7-07f1d2d09bc3'
+        termId: '33b1a7d2-ded5-4603-b09b-9b2c1e3ac62f'
+    propertyValues: []
+  - id: '166b3707-1df1-4d13-a7a3-79c8968f5cc8'
+    referencedModelObjectId: '9fe5d858-4f67-48c3-ba60-a0960ec090b5'
+    role: 'D_CURRENCY'
+    additionalTermIds:
+      - '730e7731-9b7e-4a37-a3af-e6ab29670fe0'
+    relationshipTerms:
+      - referenceTermId: 'eb68a511-0fa7-40da-b870-a427bc9b0055'
+        termId: '730a096e-bd01-4e96-a355-bc50011e7d49'
+    propertyValues: []
 tags: []
