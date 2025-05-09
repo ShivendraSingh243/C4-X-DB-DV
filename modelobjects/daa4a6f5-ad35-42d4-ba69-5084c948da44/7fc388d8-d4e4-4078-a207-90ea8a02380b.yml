@@ -1,6 +1,7 @@
 id: '7fc388d8-d4e4-4078-a207-90ea8a02380b'
 name: 'CREDITCARD_SUPERIORCARD'
 description: 'Generated Model Object from CREDITCARD_SUPERIORCARD'
+isDeactivated: false
 modelObjectTypeId: 'daa4a6f5-ad35-42d4-ba69-5084c948da44'
 terms:
   - id: 'a09bfc45-2c86-4f0b-8fe2-8f1c35d2d917'
