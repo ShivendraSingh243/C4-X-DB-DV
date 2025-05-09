@@ -153,7 +153,9 @@ dataflows:
           - termId: '16433fa9-4a9f-431a-b23c-e760620c6dce'
           - termId: '4ceb9218-cb99-4b96-8d2c-c98eafbbba8e'
           - termId: '8f915cce-c3a6-4f7b-9924-1f33c0b58c46'
-          - termId: '69a4c9e8-d243-4336-8199-0384581c8237'
+          - expression: '9913e88f-daa8-4659-8d75-709a9284c6b6.29ee0978-079f-45c1-987f-f5c59adb2421'
+            termId: '69a4c9e8-d243-4336-8199-0384581c8237'
+            propertyValues: []
           - expression: '9913e88f-daa8-4659-8d75-709a9284c6b6.3f500f8f-adb4-4f32-afd6-548f3c73c083'
             termId: 'f5e305cc-cdfb-4894-a2e0-bd1bb730d880'
             propertyValues: []
