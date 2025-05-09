@@ -1,0 +1,70 @@
+id: '1b48875e-5d9a-4b03-8776-f59a93800d9f'
+name: 'CREDITCARD'
+description: 'Generated Model Object from CREDITCARD'
+modelObjectTypeId: '18636802-0fa6-4d5d-9d73-6bd5c71b0052'
+terms:
+  - id: '563be6a7-fac3-44d7-a45c-0f667ed7f1a4'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: 'e0850ec2-0b71-47a4-841f-60e88086145d'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '5583e9cc-6b33-4bbe-83af-d574c453bdf9'
+    name: 'Hub_HK'
+    description: 'Identifier of a record'
+    defaultTermId: '2689505b-2079-48b5-9fea-60ac633b04fe'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '2da2d275-b853-45d3-89fa-5f2edd3bcc21'
+    name: 'creditcardid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+dataflows:
+  - id: 'fcaaa843-2a06-4d48-bff5-47a021638ffd'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '6ecb1b5b-2deb-4eea-a30c-fbaf027c853b'
+        name: 'Set1'
+        dataflowModelObjects:
+          - id: 'f0ec6dea-a35b-4b0a-8166-4caccd3826d7'
+            alias: 's1'
+            sourceModelObjectId: 'edfc8750-0eff-4303-9189-005ae9f81ae9'
+        termMappings:
+          - termId: '563be6a7-fac3-44d7-a45c-0f667ed7f1a4'
+          - termId: 'e0850ec2-0b71-47a4-841f-60e88086145d'
+          - termId: '5583e9cc-6b33-4bbe-83af-d574c453bdf9'
+          - expression: 'f0ec6dea-a35b-4b0a-8166-4caccd3826d7.0212a274-bb28-457e-85d8-b1f4aeae7887'
+            termId: '2da2d275-b853-45d3-89fa-5f2edd3bcc21'
