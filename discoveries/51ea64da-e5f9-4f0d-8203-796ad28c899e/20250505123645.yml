@@ -1,0 +1,63 @@
+id: 'e2c5eaea-28ed-4f66-b073-546a4965d0e4'
+name: 'elearning2'
+appVersion: '1.4.0'
+timestamp: '2025-05-05T12:36:45+00:00'
+sourceObjects:
+  - name: 'CUSTOMERCRM'
+    terms:
+      - name: 'AccountNumber'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'Marital_Status'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'Gender'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: true
+      - name: 'Number_Of_Children'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+        sourceDataType:
+          name: 'int32'
+          isNullable: true
+      - name: 'dt'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        attributes:
+          - key: 'PartitionOrder'
+            value: '1'
+        dataType:
+          name: 'string'
+        sourceDataType:
+          name: 'string'
+          isNullable: false
+    objectType: {}
+sourceSystem:
+  type: 'Parquet'

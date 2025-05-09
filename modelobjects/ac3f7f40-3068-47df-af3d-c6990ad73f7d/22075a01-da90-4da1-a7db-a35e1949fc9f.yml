@@ -1,0 +1,93 @@
+id: '22075a01-da90-4da1-a7db-a35e1949fc9f'
+name: 'CUSTOMER'
+description: 'Generated Model Object from CUSTOMER'
+modelObjectTypeId: 'ac3f7f40-3068-47df-af3d-c6990ad73f7d'
+terms:
+  - id: '364adf59-7c7b-4462-a516-8b6120015f29'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '3b806a81-d948-415e-83ad-f5cc71aedc87'
+    name: 'Hub_HK'
+    description: 'Identifier of a record'
+    defaultTermId: '2689505b-2079-48b5-9fea-60ac633b04fe'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '2b651863-3d9b-437d-9251-67d0d1824238'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
+    name: 'accountnumber'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+    propertyValues: []
+dataflows:
+  - id: '556adcee-5cac-435f-bde4-bd713ed2a166'
+    name: 'Dataflow1'
+    description: ''
+    alias: ''
+    dataflowSets:
+      - id: 'ffb9e811-4f81-4f52-9399-34d5beaeb1a2'
+        name: 'SetADW'
+        dataflowModelObjects:
+          - id: '63c21f3d-2ce0-485c-8e61-7db49c9ff2de'
+            alias: 's1'
+            sourceModelObjectId: 'd6e8f123-e27c-402c-acc0-8ecdc54c361a'
+        termMappings:
+          - termId: '364adf59-7c7b-4462-a516-8b6120015f29'
+          - termId: '3b806a81-d948-415e-83ad-f5cc71aedc87'
+          - termId: '2b651863-3d9b-437d-9251-67d0d1824238'
+          - expression: '63c21f3d-2ce0-485c-8e61-7db49c9ff2de.b8428be2-b595-4d2f-834d-a9543352197f'
+            termId: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
+            propertyValues: []
+        propertyValues: []
+      - id: '422ffc23-cc7e-4fe1-a546-a8ba3d39b4cd'
+        name: 'setCRM'
+        setOperatorId: '12bf835d-5821-4113-ac0f-942e66c64dbb'
+        dataflowModelObjects:
+          - id: '7600a0f2-7a26-4a20-ba52-74ba5012a4a8'
+            alias: 's1'
+            sourceModelObjectId: 'c5a8a77a-8451-4eba-b7a5-e0ae81914440'
+        termMappings:
+          - termId: '364adf59-7c7b-4462-a516-8b6120015f29'
+          - termId: '3b806a81-d948-415e-83ad-f5cc71aedc87'
+          - termId: '2b651863-3d9b-437d-9251-67d0d1824238'
+          - expression: '7600a0f2-7a26-4a20-ba52-74ba5012a4a8.122c0b47-d2fe-4375-9389-29f22085d0dc'
+            termId: '9169dbfb-9a71-43f0-8c75-59d830a59a8d'
+            propertyValues: []
+        propertyValues: []
+    propertyValues:
+      - propertyId: '713ec758-07f0-4d05-8b91-5d3427261f76'
+        value: 'Partition'

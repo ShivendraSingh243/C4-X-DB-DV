@@ -1,0 +1,109 @@
+id: 'e05603fb-0fd0-4076-b447-0d44fd90b2df'
+name: 'CREDITCARD'
+isDeactivated: false
+modelObjectTypeId: '678dde1d-d206-48c7-b256-9689dd0a968e'
+terms:
+  - id: '1681c63b-b325-4662-a53e-8b7e12c28a98'
+    name: 'cardtype'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'ecee5c30-442b-4846-8e24-b4d329d0364f'
+    name: 'cardnumber'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'a4aa4e5a-571a-425e-926c-864bcc2eb04f'
+    name: 'expmonth'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '2ac74b75-7e3f-4034-b551-e36c75c44802'
+    name: 'expyear'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: 'ea3aa83a-eb13-436b-aa89-c39f02d2bf5b'
+    name: 'modifieddate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '1046a657-f0b1-43cd-9b41-ddee265d608c'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'd93d0109-181d-445c-af81-1955f06254e1'
+    name: 'creditcardid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+dataflows:
+  - id: 'ceaa6786-1951-40f8-bf7d-bee714248db6'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '3f13edee-f03d-4d50-a67e-56320b412067'
+        name: 'Set1'
+        dataflowModelObjects:
+          - id: 'f7cef3ee-4668-4e2e-a001-9cc7e447f330'
+            alias: 's1'
+            sourceModelObjectId: '0b618633-8053-4b84-a019-c60808617d21'
+          - id: '0da0b66e-0fda-4307-bb67-13d7b6d8d270'
+            alias: 's2'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: 'edfc8750-0eff-4303-9189-005ae9f81ae9'
+          - id: '3dec6715-26c9-4eac-b840-c8a2d6a445db'
+            alias: 's3'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: '92976fc7-a04d-49a2-90f1-9232646ebd7f'
+        termMappings:
+          - expression: 'f7cef3ee-4668-4e2e-a001-9cc7e447f330.546b7bb5-f8cc-4d67-b5f5-25f18bff08eb'
+            termId: '1681c63b-b325-4662-a53e-8b7e12c28a98'
+          - expression: 'f7cef3ee-4668-4e2e-a001-9cc7e447f330.90d887b1-0e7e-4253-a4b8-6f9d981a02c5'
+            termId: 'ecee5c30-442b-4846-8e24-b4d329d0364f'
+          - expression: 'f7cef3ee-4668-4e2e-a001-9cc7e447f330.078127e4-ce46-48ac-8c89-b53e1bef5cbf'
+            termId: 'a4aa4e5a-571a-425e-926c-864bcc2eb04f'
+          - expression: 'f7cef3ee-4668-4e2e-a001-9cc7e447f330.626f901a-7ab5-46c7-982b-c4c1a59ed955'
+            termId: '2ac74b75-7e3f-4034-b551-e36c75c44802'
+          - expression: 'f7cef3ee-4668-4e2e-a001-9cc7e447f330.21bb8209-6ea7-45dd-877e-f95ceb208ce1'
+            termId: 'ea3aa83a-eb13-436b-aa89-c39f02d2bf5b'
+          - expression: 'f7cef3ee-4668-4e2e-a001-9cc7e447f330.17f2def6-fea7-465c-88a5-441cefe89214'
+            termId: '1046a657-f0b1-43cd-9b41-ddee265d608c'
+          - expression: '0da0b66e-0fda-4307-bb67-13d7b6d8d270.0212a274-bb28-457e-85d8-b1f4aeae7887'
+            termId: 'd93d0109-181d-445c-af81-1955f06254e1'
+tags: []

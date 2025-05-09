@@ -1,0 +1,110 @@
+{
+	"environments": [
+		{
+			"name": "DEV",
+			"projects": [
+				{
+					"name": "C3-X-DB-DV",
+					"variables": [
+						{
+							"name": "c3-x-db-dv#businessvault#database_name",
+							"value": "datalakehouse",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#businessvault#schema_name",
+							"value": "businessvault",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#mart#database_name",
+							"value": "datalakehouse",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#mart#schema_name",
+							"value": "mart",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#rawvault#database_name",
+							"value": "datalakehouse",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#rawvault#schema_name",
+							"value": "rawvault",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#stage#database_name",
+							"value": "datalakehouse",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#stage#schema_name",
+							"value": "stage",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#stage_files_with_crm#database_name",
+							"value": "",
+							"secretname": ""
+						},
+						{
+							"name": "c3-x-db-dv#stage_files_with_crm#schema_name",
+							"value": "",
+							"secretname": ""
+						}
+					]
+				},
+				{
+					"name": "notebook_orchestration",
+					"variables": [
+						{
+							"name": "notebook_orchestration#notebook_orchestration#run_notebook_timeout",
+							"value": "3600",
+							"secretname": ""
+						},
+						{
+							"name": "notebook_orchestration#notebook_orchestration#loader_folder_path",
+							"value": "../Jupyter/",
+							"secretname": ""
+						}
+					]
+				},
+				{
+					"name": "loadcontrol",
+					"variables": [
+						{
+							"name": "loadcontrol#loadcontrol#database_name",
+							"value": "datalakehouse",
+							"secretname": ""
+						},
+						{
+							"name": "loadcontrol#loadcontrol#schema_name",
+							"value": "",
+							"secretname": ""
+						},
+						{
+							"name": "loadcontrol#loadcontrol#log_table_name",
+							"value": "execution_log",
+							"secretname": ""
+						},
+						{
+							"name": "loadcontrol#loadcontrol#application_name",
+							"value": "",
+							"secretname": ""
+						},
+						{
+							"name": "loadcontrol#loadcontrol#application_environment_name",
+							"value": "DEV",
+							"secretname": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"secretprovider": {}
+}

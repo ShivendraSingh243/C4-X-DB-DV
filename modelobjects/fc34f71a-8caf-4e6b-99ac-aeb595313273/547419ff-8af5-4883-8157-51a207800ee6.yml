@@ -1,0 +1,158 @@
+id: '547419ff-8af5-4883-8157-51a207800ee6'
+name: 'ORDER_ORDERDETAIL'
+description: 'Generated Model Object from SALESORDERDETAIL'
+isDeactivated: false
+modelObjectTypeId: 'fc34f71a-8caf-4e6b-99ac-aeb595313273'
+terms:
+  - id: 'b4675da4-31e5-4565-b405-e421c1d21719'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '80434c52-44d7-452a-b7c9-74964f68a2b4'
+    name: 'Link_HK'
+    description: 'Identifier of a record'
+    defaultTermId: '681eef24-7738-4e91-852b-8c53a3197e64'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'dff24d39-698d-4fff-ad24-fc929fd512ea'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '2bb141c1-6051-4653-a95b-de3c21643a22'
+    name: 'FK_ORDER_salesorderid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '9bf59cf1-57cf-41a2-947c-468386ea1944'
+    name: 'ORDER_ORDER_HK'
+    description: 'Identifier of the referenced Hub record'
+    defaultTermId: '3e06f270-8fdf-4e8e-80f6-3583cf8bf51c'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: true
+    isIdentity: false
+    isIdentityForeignKey: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'b015f10c-c031-44fe-8780-9d52304a1d94'
+    name: 'FK_ORDERDETAIL_salesorderid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '7ac51f50-58ab-44a9-91b8-5e640b89ea03'
+    name: 'FK_ORDERDETAIL_salesorderdetailid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '9c7b923e-0349-4ac7-9957-10c6ac3c979a'
+    name: 'ORDERDETAIL_ORDERDETAIL_HK'
+    description: 'Identifier of the referenced Hub record'
+    defaultTermId: '3e06f270-8fdf-4e8e-80f6-3583cf8bf51c'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: true
+    isIdentity: false
+    isIdentityForeignKey: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+dataflows:
+  - id: 'a09cbd39-bb39-4608-8ff4-4a4426bdead7'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '8265f44c-932d-4556-8265-f4ce4fb486fb'
+        name: 'Set1'
+        dataflowModelObjects:
+          - id: 'f0940508-6e5d-4a5a-9787-01bfc6a0c34f'
+            alias: 's1'
+            sourceModelObjectId: '24e4cfed-85dc-4735-b593-f822ae5a80e2'
+          - id: 'd255ed78-e8f8-4645-9ea6-7c81fc54bf86'
+            alias: 's2'
+            joinExpression: 'f0940508-6e5d-4a5a-9787-01bfc6a0c34f.0430c685-087e-4e93-8310-23ee2dda18aa = d255ed78-e8f8-4645-9ea6-7c81fc54bf86.b44d042d-a01d-4894-af91-edea11ee4e8c'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: 'aba72bb2-8f9f-461c-903a-9133098cef8e'
+            propertyValues: []
+        termMappings:
+          - termId: 'b4675da4-31e5-4565-b405-e421c1d21719'
+          - termId: '80434c52-44d7-452a-b7c9-74964f68a2b4'
+          - termId: 'dff24d39-698d-4fff-ad24-fc929fd512ea'
+          - expression: 'd255ed78-e8f8-4645-9ea6-7c81fc54bf86.b44d042d-a01d-4894-af91-edea11ee4e8c'
+            termId: '2bb141c1-6051-4653-a95b-de3c21643a22'
+            propertyValues: []
+          - termId: '9bf59cf1-57cf-41a2-947c-468386ea1944'
+          - expression: 'f0940508-6e5d-4a5a-9787-01bfc6a0c34f.0430c685-087e-4e93-8310-23ee2dda18aa'
+            termId: 'b015f10c-c031-44fe-8780-9d52304a1d94'
+            propertyValues: []
+          - expression: 'f0940508-6e5d-4a5a-9787-01bfc6a0c34f.20c12997-e377-48fa-8a1b-5ce889190959'
+            termId: '7ac51f50-58ab-44a9-91b8-5e640b89ea03'
+            propertyValues: []
+          - termId: '9c7b923e-0349-4ac7-9957-10c6ac3c979a'
+relationships:
+  - id: 'b829b620-82c8-47cd-a698-734cdc1e7d13'
+    referencedModelObjectId: 'df951579-d040-462a-ba5e-2e5592860a7b'
+    role: 'ORDER'
+    additionalTermIds:
+      - '9bf59cf1-57cf-41a2-947c-468386ea1944'
+    relationshipTerms:
+      - referenceTermId: 'd4c28799-49bd-404a-98d8-f30aedd2a829'
+        termId: '2bb141c1-6051-4653-a95b-de3c21643a22'
+    propertyValues: []
+  - id: 'a815859e-8c13-4eb8-9753-0eb53130b0f1'
+    referencedModelObjectId: '229f6e64-b956-4d9a-97ff-d5dae8c40ea6'
+    role: 'ORDERDETAIL'
+    additionalTermIds:
+      - '9c7b923e-0349-4ac7-9957-10c6ac3c979a'
+    relationshipTerms:
+      - referenceTermId: 'c242797f-8f55-4d62-ba3e-6d3b1be484f6'
+        termId: 'b015f10c-c031-44fe-8780-9d52304a1d94'
+      - referenceTermId: '21b14c6d-c86b-47dc-948b-e8e521d25c78'
+        termId: '7ac51f50-58ab-44a9-91b8-5e640b89ea03'
+    propertyValues: []
