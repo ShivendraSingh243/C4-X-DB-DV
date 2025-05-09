@@ -42,6 +42,56 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '023a2a7c-37eb-47a5-85dc-ee8cf4aa9ef2'
+    name: 'FK_CREDITCARD_creditcardid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'fa45ac20-ece7-4d38-ac36-3b72a436df94'
+    name: 'CREDITCARD_CREDITCARD_HK'
+    description: 'Identifier of the referenced Hub record'
+    defaultTermId: '3e06f270-8fdf-4e8e-80f6-3583cf8bf51c'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: true
+    isIdentity: false
+    isIdentityForeignKey: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '4f26c1d1-9950-484d-97f7-320601a3d47f'
+    name: 'FK_CREDITCARD_SUPERIORCARD_creditcardid'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isBusinessKeyForeignKey: true
+    isForeignKey: true
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'fb5765dd-3b7f-40d2-94af-04006e69924a'
+    name: 'CREDITCARD_SUPERIORCARD_CREDITCARD_SUPERIORCARD_HK'
+    description: 'Identifier of the referenced Hub record'
+    defaultTermId: '3e06f270-8fdf-4e8e-80f6-3583cf8bf51c'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: true
+    isIdentity: false
+    isIdentityForeignKey: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
 dataflows:
   - id: 'fc00b84c-a96e-440d-9c89-7fa740981a8c'
     name: 'Dataflow1'
@@ -52,4 +102,27 @@ dataflows:
           - termId: 'cf654b5f-a4c4-4ae8-8b0c-9a028615e515'
           - termId: 'dc650861-bf91-4f05-baa3-f5bdd4e03be8'
           - termId: '40dfbf32-17c7-4003-984b-e5b464ff7bef'
+          - termId: '023a2a7c-37eb-47a5-85dc-ee8cf4aa9ef2'
+          - termId: 'fa45ac20-ece7-4d38-ac36-3b72a436df94'
+          - termId: '4f26c1d1-9950-484d-97f7-320601a3d47f'
+          - termId: 'fb5765dd-3b7f-40d2-94af-04006e69924a'
+relationships:
+  - id: '996c0d54-5d7e-48bb-a8c6-003da90cdd8b'
+    referencedModelObjectId: 'edfc8750-0eff-4303-9189-005ae9f81ae9'
+    role: 'CREDITCARD'
+    additionalTermIds:
+      - 'fa45ac20-ece7-4d38-ac36-3b72a436df94'
+    relationshipTerms:
+      - referenceTermId: '0212a274-bb28-457e-85d8-b1f4aeae7887'
+        termId: '023a2a7c-37eb-47a5-85dc-ee8cf4aa9ef2'
+    propertyValues: []
+  - id: '4b29f896-ddbc-40ed-b172-d419aa6df87f'
+    referencedModelObjectId: '1b48875e-5d9a-4b03-8776-f59a93800d9f'
+    role: 'CREDITCARD_SUPERIORCARD'
+    additionalTermIds:
+      - 'fb5765dd-3b7f-40d2-94af-04006e69924a'
+    relationshipTerms:
+      - referenceTermId: '2da2d275-b853-45d3-89fa-5f2edd3bcc21'
+        termId: '4f26c1d1-9950-484d-97f7-320601a3d47f'
+    propertyValues: []
 tags: []
