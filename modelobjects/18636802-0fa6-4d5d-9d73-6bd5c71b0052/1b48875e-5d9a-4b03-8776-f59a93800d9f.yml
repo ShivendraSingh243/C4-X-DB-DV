@@ -59,6 +59,7 @@ dataflows:
     dataflowSets:
       - id: '6ecb1b5b-2deb-4eea-a30c-fbaf027c853b'
         name: 'Set1'
+        whereExpression: "af02d4e7-1536-4740-938e-0517e3606a7f.546b7bb5-f8cc-4d67-b5f5-25f18bff08eb= 'SuperiorCard'\r\n"
         dataflowModelObjects:
           - id: 'f0ec6dea-a35b-4b0a-8166-4caccd3826d7'
             alias: 's1'
@@ -75,3 +76,4 @@ dataflows:
           - termId: '5583e9cc-6b33-4bbe-83af-d574c453bdf9'
           - expression: 'f0ec6dea-a35b-4b0a-8166-4caccd3826d7.0212a274-bb28-457e-85d8-b1f4aeae7887'
             termId: '2da2d275-b853-45d3-89fa-5f2edd3bcc21'
+        propertyValues: []
