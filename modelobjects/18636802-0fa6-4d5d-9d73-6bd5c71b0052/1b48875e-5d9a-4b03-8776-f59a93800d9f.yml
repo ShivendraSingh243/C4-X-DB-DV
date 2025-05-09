@@ -63,6 +63,10 @@ dataflows:
           - id: 'f0ec6dea-a35b-4b0a-8166-4caccd3826d7'
             alias: 's1'
             sourceModelObjectId: 'edfc8750-0eff-4303-9189-005ae9f81ae9'
+          - id: 'af02d4e7-1536-4740-938e-0517e3606a7f'
+            alias: 's2'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: '0b618633-8053-4b84-a019-c60808617d21'
         termMappings:
           - termId: '563be6a7-fac3-44d7-a45c-0f667ed7f1a4'
           - termId: 'e0850ec2-0b71-47a4-841f-60e88086145d'
