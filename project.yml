@@ -5,3 +5,8 @@ version: 'v1.5'
 configuration:
   id: 'biGENIUS.Implementation.Generator.VaultAndMart.Spark.Databricks'
   version: '1.8.0'
+sourceSystems:
+  - id: '99534ea7-f3d1-4d84-9db4-eb2e74aa6e7f'
+    name: 'Project_From_BiGenius'
+    isLinkedProject: true
+    sourceSystemTypeId: '301305db-47c8-4d20-b2b2-5dbefbaf251d'
