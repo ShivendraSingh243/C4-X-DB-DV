@@ -1,6 +1,7 @@
 id: '9fe5d858-4f67-48c3-ba60-a0960ec090b5'
-name: 'CURRENCY'
+name: 'D_CURRENCY'
 description: 'Generated Model Object from CURRENCY'
+isDeactivated: false
 modelObjectTypeId: '293389a4-3c32-4c71-9514-f20135c9bc08'
 terms:
   - id: '7d8924a1-5b05-48c0-b6d9-c7c58d0ff637'
@@ -69,7 +70,7 @@ terms:
     dataType:
       platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
   - id: 'bfd4adb3-6a20-4f5c-984a-ac0bcaeeadb4'
-    name: 'CURRENCY_ID'
+    name: 'D_CURRENCY_ID'
     description: 'Default term with mart dimension identity'
     defaultTermId: '3d0d1df1-e8a7-45bb-abf4-63b4ecdbc2ea'
     hiddenInSource: false
