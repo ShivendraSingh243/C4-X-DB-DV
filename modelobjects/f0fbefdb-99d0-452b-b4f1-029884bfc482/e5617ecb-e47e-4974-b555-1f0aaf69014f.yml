@@ -113,7 +113,7 @@ dataflows:
           - id: '3e2e33d5-540e-4aba-a453-8d01ba23500b'
             alias: 's3'
             joinExpression: '3e2e33d5-540e-4aba-a453-8d01ba23500b.8d293dee-1187-433e-afe0-60b665303f9b = 586637d5-0420-4740-8aa3-0a2da6038bc1.3b3b191f-0bf0-4dbd-b8d0-de92e76ebd44'
-            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            joinOperatorId: 'ccd0c803-6c68-405c-9ede-c8ca4883f3ba'
             sourceModelObjectId: 'a85a119c-1e17-4d12-b783-24c0cc3f917e'
             propertyValues: []
           - id: '3cf49af2-e546-481d-ab81-815a78492473'
