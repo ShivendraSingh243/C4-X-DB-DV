@@ -1,0 +1,111 @@
+id: 'e5617ecb-e47e-4974-b555-1f0aaf69014f'
+name: 'F_SALES'
+isDeactivated: false
+modelObjectTypeId: 'f0fbefdb-99d0-452b-b4f1-029884bfc482'
+terms:
+  - id: '72fd17cd-ec74-4d3b-8573-1914bd6dac43'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '66cacfd4-f5af-4a65-8ab2-9304dd103eed'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '766065c8-8721-48d0-bbaf-9fd84f588bd1'
+    name: 'BG_EffectiveTimestamp'
+    description: 'Default term, which can be mapped to identify the correct record in case of a lookup into a historized table'
+    defaultTermId: 'd7d6f3a3-92c5-40a0-b136-41ab86c199a5'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: 'b0f022ee-3c4a-428f-b9e8-7fd60f799be6'
+    name: 'BG_DataflowName'
+    description: 'Default term for incremental load'
+    defaultTermId: 'af496643-6176-472a-8abe-b6df2e13a2fb'
+    hiddenInSource: true
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'f33e7fc3-a20a-4053-8428-4861ed8bb0a4'
+    name: 'BG_ID'
+    description: 'Default term for surrogate key of increment table'
+    defaultTermId: 'e8bfb245-78ae-42cc-93ca-ebb54f606720'
+    hiddenInSource: true
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '3ea7a252-6878-4db5-9994-72fd3dae2075'
+  - id: '5cd96bba-8f33-419f-a4ff-e2d6c585c666'
+    name: 'BG_IncrementalFilter'
+    description: 'Default term for incremental load'
+    defaultTermId: 'f70ffce7-44ad-4d1a-98fd-01854032b15f'
+    hiddenInSource: true
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'adf8e79f-24e0-4b81-89f2-ec71569dd640'
+  - id: 'a96161e6-f0d9-4d8a-b107-9abf5bdb3a0f'
+    name: 'BG_DataflowSetName'
+    description: 'Default term for incremental load'
+    defaultTermId: '3024ca99-e262-4d16-962f-23fb03943dee'
+    hiddenInSource: true
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+dataflows:
+  - id: 'c82e73ad-1baa-41b5-bf8c-d7dd06a0b171'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '60bf8f5b-9969-4751-9f06-7bc311954da4'
+        name: 'Set1'
+        termMappings:
+          - termId: '72fd17cd-ec74-4d3b-8573-1914bd6dac43'
+          - termId: '66cacfd4-f5af-4a65-8ab2-9304dd103eed'
+          - termId: '766065c8-8721-48d0-bbaf-9fd84f588bd1'
+          - termId: 'b0f022ee-3c4a-428f-b9e8-7fd60f799be6'
+          - termId: 'f33e7fc3-a20a-4053-8428-4861ed8bb0a4'
+          - termId: '5cd96bba-8f33-419f-a4ff-e2d6c585c666'
+          - termId: 'a96161e6-f0d9-4d8a-b107-9abf5bdb3a0f'
+tags: []
