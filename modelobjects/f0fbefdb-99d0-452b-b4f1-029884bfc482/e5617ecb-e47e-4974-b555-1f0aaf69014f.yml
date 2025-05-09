@@ -128,6 +128,10 @@ dataflows:
             joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
             sourceModelObjectId: 'edfc8750-0eff-4303-9189-005ae9f81ae9'
             propertyValues: []
+          - id: '54aea165-260f-4859-8cd0-7726004716b5'
+            alias: 's6'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: '1bb8df62-1602-4ee8-aab2-a6d0ec731984'
         termMappings:
           - termId: '72fd17cd-ec74-4d3b-8573-1914bd6dac43'
           - termId: '66cacfd4-f5af-4a65-8ab2-9304dd103eed'
