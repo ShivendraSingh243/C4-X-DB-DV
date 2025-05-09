@@ -140,6 +140,18 @@ terms:
     isNullable: false
     dataType:
       platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'f535b5a5-c295-466d-aa9b-cb1b879d2ad1'
+    name: 'averagerate'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'e812a234-5ec3-418c-a5a4-413ee86a764d'
+      precision: 19
+      scale: 4
 dataflows:
   - id: 'c82e73ad-1baa-41b5-bf8c-d7dd06a0b171'
     name: 'Dataflow1'
@@ -208,4 +220,6 @@ dataflows:
             termId: 'd1662687-7f09-4a8c-a075-2aef1d7a0dd0'
           - expression: '586637d5-0420-4740-8aa3-0a2da6038bc1.d4c28799-49bd-404a-98d8-f30aedd2a829'
             termId: '49458c22-2c93-4ada-8241-de92491ea5a6'
+          - expression: '3e2e33d5-540e-4aba-a453-8d01ba23500b.31f32acc-6abd-4236-9fec-5ff9d3b43845'
+            termId: 'f535b5a5-c295-466d-aa9b-cb1b879d2ad1'
 tags: []
