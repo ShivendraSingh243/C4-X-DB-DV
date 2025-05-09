@@ -116,6 +116,10 @@ dataflows:
             joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
             sourceModelObjectId: 'a85a119c-1e17-4d12-b783-24c0cc3f917e'
             propertyValues: []
+          - id: '3cf49af2-e546-481d-ab81-815a78492473'
+            alias: 's4'
+            joinOperatorId: 'bbdc564b-c651-4108-a2ac-1bce74acd60b'
+            sourceModelObjectId: 'd226fc29-dd1e-4388-a9a5-adad442b5e35'
         termMappings:
           - termId: '72fd17cd-ec74-4d3b-8573-1914bd6dac43'
           - termId: '66cacfd4-f5af-4a65-8ab2-9304dd103eed'
